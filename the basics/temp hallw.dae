@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.80.75 commit date:2019-07-29, commit time:14:47, hash:f6cb5f54494e</authoring_tool>
+    </contributor>
+    <created>2021-03-26T20:09:25</created>
+    <modified>2021-03-26T20:09:25</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="flooor-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.01176916 0.1473142 0.02528362 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="wainscotting-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8000001 0.777581 0.03363529 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="wewwd-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.09850429 0.01776336 0.009610909 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="flooor-material" name="flooor">
+      <instance_effect url="#flooor-effect"/>
+    </material>
+    <material id="wainscotting-material" name="wainscotting">
+      <instance_effect url="#wainscotting-effect"/>
+    </material>
+    <material id="wewwd-material" name="wewwd">
+      <instance_effect url="#wewwd-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Cube-mesh" name="Cube">
+      <mesh>
+        <source id="Cube-mesh-positions">
+          <float_array id="Cube-mesh-positions-array" count="60">1 10.06671 0.5843484 1 3.958938 -1 1 -2.993929 1 1 -2.993929 -1 -1 3.958938 1 -1 3.958938 -1 -1 -2.993929 1 -1 -2.993929 -1 1 7.012826 0.5843484 -1 7.012826 0.5843484 -1 10.06671 0.842413 -1 7.012826 2.584348 -1 10.06671 0.5843484 1 10.06671 2.584348 -1 10.06671 2.584348 -1 -2.993929 -0.7419355 1 -2.993929 -0.7419355 -1 3.958938 -0.7419355 1 10.06671 0.842413 -1 7.012826 0.842413</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh-positions-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube-mesh-normals">
+          <float_array id="Cube-mesh-normals-array" count="15">0 -1 0 -1 0 0 0 0 -1 0 1 0 0 0.4605121 -0.8876535</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh-normals-array" count="5" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube-mesh-map-0">
+          <float_array id="Cube-mesh-map-0-array" count="156">0.625 0.25 0.407258 0.5 0.407258 0.25 0.625 0.5 0.4072581 0.75 0.407258 0.5 0.625 0.75 0.375 1 0.375 0.75 0.625 0.75 0.407258 0.75 0.4072581 0.75 0.657258 0.5 0.625 0.75 0.625 0.5 0.375 0.75 0.625 0.75 0.625 0.75 0.407258 0.75 0.375 0.75 0.375 0.75 0.875 0.5 0.657258 0.75 0.657258 0.5 0.625 0.75 0.407258 0.75 0.407258 0.75 0.375 0.75 0.625 0.75 0.625 0.75 0.4072581 0.75 0.375 0.75 0.375 0.75 0.407258 0.5 0.375 0.75 0.375 0.5 0.407258 0.25 0.375 0.5 0.375 0.25 0.625 0.25 0.625 0.5 0.407258 0.5 0.625 0.5 0.625 0.75 0.4072581 0.75 0.625 0.75 0.625 1 0.375 1 0.625 0.75 0.625 0.75 0.407258 0.75 0.657258 0.5 0.657258 0.75 0.625 0.75 0.375 0.75 0.375 0.75 0.625 0.75 0.407258 0.75 0.407258 0.75 0.375 0.75 0.875 0.5 0.875 0.75 0.657258 0.75 0.625 0.75 0.625 0.75 0.407258 0.75 0.375 0.75 0.375 0.75 0.625 0.75 0.4072581 0.75 0.407258 0.75 0.375 0.75 0.407258 0.5 0.4072581 0.75 0.375 0.75 0.407258 0.25 0.407258 0.5 0.375 0.5</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh-map-0-array" count="78" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube-mesh-vertices">
+          <input semantic="POSITION" source="#Cube-mesh-positions"/>
+        </vertices>
+        <triangles material="flooor-material" count="6">
+          <input semantic="VERTEX" source="#Cube-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube-mesh-map-0" offset="2" set="0"/>
+          <p>1 2 6 7 2 7 5 2 8 5 4 15 8 4 16 1 4 17 9 2 27 0 2 28 8 2 29 1 2 45 3 2 46 7 2 47 5 4 54 9 4 55 8 4 56 9 2 66 12 2 67 0 2 68</p>
+        </triangles>
+        <triangles material="wainscotting-material" count="10">
+          <input semantic="VERTEX" source="#Cube-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube-mesh-map-0" offset="2" set="0"/>
+          <p>10 3 12 0 3 13 12 3 14 19 1 18 12 1 19 9 1 20 17 1 30 9 1 31 5 1 32 15 1 33 5 1 34 7 1 35 16 0 36 7 0 37 3 0 38 10 3 51 18 3 52 0 3 53 19 1 57 10 1 58 12 1 59 17 1 69 19 1 70 9 1 71 15 1 72 17 1 73 5 1 74 16 0 75 15 0 76 7 0 77</p>
+        </triangles>
+        <triangles material="wewwd-material" count="10">
+          <input semantic="VERTEX" source="#Cube-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube-mesh-map-0" offset="2" set="0"/>
+          <p>2 0 0 15 0 1 16 0 2 6 1 3 17 1 4 15 1 5 4 1 9 19 1 10 17 1 11 14 3 21 18 3 22 10 3 23 11 1 24 10 1 25 19 1 26 2 0 39 6 0 40 15 0 41 6 1 42 4 1 43 17 1 44 4 1 48 11 1 49 19 1 50 14 3 60 13 3 61 18 3 62 11 1 63 14 1 64 10 1 65</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Cube" name="Cube" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 1</matrix>
+        <instance_geometry url="#Cube-mesh" name="Cube">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="flooor-material" target="#flooor-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="wainscotting-material" target="#wainscotting-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="wewwd-material" target="#wewwd-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
