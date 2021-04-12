@@ -10,3 +10,4 @@ Known problems:
 - Player just plain old slides slowly down a slope when not moving depending on script used
 
 Particlings or whatever I called it- separate file to implemebt the exact setup I want for a thing with particles which will be merged into the main basics gamefile when done-ish
+The mesh used to denote where the particles will be active (for example, grass particles coming from the player's feet when walking through a field of grass) needs to be a StaticBody or whatever it is rather than an Area so that more complex meshes can be used to map out grass patches, because trimeshes don't work as Areas for some goddamn reason. So the game needs to be set up around that, which is done here using an Area attached to the player model and collision layers.
