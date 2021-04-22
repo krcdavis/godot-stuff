@@ -38,7 +38,7 @@ collision_mask = 2
 shape = SubResource( 4 )
 
 [node name="youptc" type="Particles" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 1.42109e-014, 0, -1.42109e-014, 1, 0, -3.69455e-008, 0.845217 )
+transform = Transform( 1, 0, 0, 0, 1, 1.77636e-014, 0, -1.77636e-014, 1, 0, -9.72861e-008, 2.22565 )
 emitting = false
 process_material = SubResource( 5 )
 draw_pass_1 = SubResource( 6 )

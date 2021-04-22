@@ -39,10 +39,15 @@ func _physics_process(delta):
 	
 	#if Area overlaps_body something named grassplane, emit grass particles ?
 	var youa = get_node("youarea")
+	var youp = get_node("youptc")
+	var grasson = false;
 	var poopees = youa.get_overlapping_bodies()
 	for poopee in poopees:
-		print(poopee.name)
-		#if poopee.name == "grassp", set particle grassp/youptc on
+		#print(poopee.name)
+		if poopee.name == "grassp":
+			if velocity.length_squared() > 0:
+				grasson = true
+	youp.set_emitting(grasson)
 	
 func is_you():
 	pass;
