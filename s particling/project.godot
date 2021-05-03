@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="s particling"
-run/main_scene="res://room.tscn"
+run/main_scene="res://field1 c1 2.tscn"
 config/icon="res://icon.png"
 
 [autoload]
