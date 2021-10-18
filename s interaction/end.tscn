@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://game end pp.png" type="Texture" id=1]
+[ext_resource path="res://game end p.png" type="Texture" id=2]
+[ext_resource path="res://game end tt.png" type="Texture" id=3]
+[ext_resource path="res://game end t.png" type="Texture" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="game end pp" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 467.22, 430 )
+texture = ExtResource( 1 )
+
+[node name="game end p" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 524.902, 300.52 )
+scale = Vector2( 0.572654, 0.578824 )
+texture = ExtResource( 2 )
+
+[node name="game end t" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 518.362, 312.476 )
+scale = Vector2( 0.544562, 0.559913 )
+texture = ExtResource( 4 )
+
+[node name="game end tt" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 335, 398.5 )
+scale = Vector2( 0.795187, 0.713266 )
+texture = ExtResource( 3 )
