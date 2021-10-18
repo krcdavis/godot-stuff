@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://models/yolk.material" type="Material" id=1]
+[ext_resource path="res://models/eggry.glb" type="PackedScene" id=2]
+
+[node name="eggry" instance=ExtResource( 2 )]
+
+[node name="Sphere001" parent="Sphere" index="0"]
+visible = false
+
+[node name="SurfCurve" parent="." index="2"]
+visible = false
+
+[node name="Plane" parent="Armature/Skeleton" index="0"]
+material/0 = ExtResource( 1 )
